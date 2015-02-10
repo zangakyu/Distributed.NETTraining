@@ -1,0 +1,210 @@
+﻿<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Applications distribuées en .NET</title>
+    <meta name="description" content="Cours sur les applications distribuées en .NET">
+    <meta name="author" content="Clément Bouillier">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../RevealJS/css/reveal.min.css">
+    <link rel="stylesheet" href="../RevealJS/css/theme/default.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../RevealJS/lib/css/zenburn.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = '../RevealJS/css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+    <!--[if lt IE 9]>
+    <script src="../RevealJS/lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="reveal">
+        <!-- Any section element inside of this container is displayed as a slide -->
+        <div class="slides">
+            <section>
+                <h1>Applications distribuées en .NET</h1>
+                <h3>Introduction IUT Lyon 1</h3>
+                <p>
+                    <small>Clément Bouillier - <a href="http://www.devcrafting.com">Devcrafting</a> - <a href="http://twitter.com/clem_bouillier">@clem_bouillier</a></small>
+                </p>
+            </section>
+            <section>
+                <section>
+                    <h2>Faisons connaissance !</h2>
+                </section>
+                <section>
+                    <h3>
+                        Ca m'intéresse
+                    </h3>
+                    <ol>
+                        <li>Votre expérience ? Ce que vous faites ?</li>
+                        <li class="fragment">Ce que vous voulez faire ? Quels métiers ? Quels technologies ?</li>
+                        <li class="fragment">Ce que vous attendez de ce cours ?</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        Je réponds rapidement à ces questions
+                    </h3>
+                    <ol>
+                        <li>Expériences principalement en .NET depuis 10 ans</li>
+                        <li class="fragment">Mais également en JAVA et PHP (+ autres expérimentations)</li>
+                        <li class="fragment">Tour à tour : développeur, chef de projet technique, architecte, tech leader, chef de projets, maîtrise d'ouvrage...</li>
+                        <li class="fragment">Aujourd'hui : <a href="http://manifesto.softwarecraftsmanship.org/">"software craftsman"</a> et <a href="http://www.agilemodeling.com/essays/generalizingSpecialists.htm">"generalizing specialist"</a>, bref n'ayons pas peur des mots : développeur ! <a href="http://fierdetredeveloppeur.org/">ET FIER DE L'ETRE !</a></li>
+                        <li class="fragment">Sensibiliser des personnes investies et ouvertes à une autre vision de l'informatique</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        A vous : vos expériences
+                    </h3>
+                    <ol>
+                        <li>Langages/plateformes ?</li>
+                        <li class="fragment">Métier ?</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        A vous : votre futur
+                    </h3>
+                    <ol>
+                        <li>Langages/plateformes ?</li>
+                        <li class="fragment">Métiers ?</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        A vous : ce que vous attendez de ce cours
+                    </h3>
+                    <ol>
+                        <li>?</li>
+                        <li class="fragment">?</li>
+                    </ol>
+                </section>
+            </section>
+            <section>
+                <section>
+                    <h2>Contenu et déroulé du module</h2>
+                </section>
+                <section>
+                    <h3>
+                        Ce module n'est pas...
+                    </h3>
+                    <ol>
+                        <li class="fragment">...un gavage sur toutes les facettes du framework .NET</li>
+                        <li class="fragment">...un tutoriel pour apprendre LA façon de faire</li>
+                        <li class="fragment">...une vision exhaustive du développement et de l'architecture logicielle</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        Un maximum de pratique !
+                    </h3>
+                    <ol>
+                        <li>J'aime la théorie, mais j'en ai trop "souffert" :)</li>
+                        <li class="fragment">/!\ cela ne signifie pas que ce n'est pas important /!\</li>
+                        <li class="fragment">Je vous propose donc une démarche pragmatique où chacun pourra creuser plus ou moins loin</li>
+                        <li class="fragment">/!\ ce n'est pas une invitation à en faire le minimum /!\</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        Quelques principes à adopter
+                    </h3>
+                    <ol>
+                        <li>Je suis un adepte des coding dojo : un moment pour s'entraîner sans pression du résultat</li>
+                        <li class="fragment">Pair programming : en binôme on est plus efficace et c'est plus enrichissant</li>
+                        <li class="fragment">TDD/TDL : Test Driven Development/Learning = exprimer l'intention et réaliser la réponse la plus simple</li>
+                        <li class="fragment">Démarche "Agile" : itérations et rétrospectives durant le cours</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        Une base importante : Git
+                    </h3>
+                    <ol>
+                        <li>Le support du cours sera sur GitHub (incluant cette présentation)</li>
+                        <li class="fragment">Mis à jour lors de chaque TD avec votre contribution !</li>
+                        <li class="fragment">Il est fortement conseillé de forker le repository du module sur son compte GitHub</li>
+                        <li class="fragment">Vous travaillerez avec Git en continu durant toutes les sessions</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        "Une autre vision" de l'architecture "distribuée"
+                    </h3>
+                    <ol>
+                        <li>VS architecture "en couches" et "N-Tiers"</li>
+                        <li class="fragment">VS centrée sur un modèle relationnel (avec une base SQL)</li>
+                        <li class="fragment">Approche libs VS frameworks</li>
+                        <li class="fragment">"Architecture émergente"</li>
+                    </ol>
+                    <h4 class="fragment">Tout cela en essayant de conserver un maximum de lien d'un TD à l'autre...</h4>
+                </section>
+                <section>
+                    <h3>
+                        Tuons quelques vieux démons !
+                    </h3>
+                    <ol>
+                        <p>On utilisera le langage C# et la plateforme .NET, mais...</p>
+                        <li class="fragment">...ce que nous allons voir n'est pas spécifique à .NET !</li>
+                        <li class="fragment">...le C# est très proche d'autres langages orientés objets (on se concentrera sur les différences éventuellement)</li>
+                        <li class="fragment">...ne faites pas une "fixette" sur Micro$oft ! D'ailleurs ça change...de plus en plus d'Open Source</li>
+                    </ol>
+                </section>
+                <section>
+                    <h3>
+                        Et enfin, une règle de conduite
+                    </h3>
+                    <ol>
+                        <li>Si vous venez c'est pour participer...</li>
+                        <li class="fragment">...et tant qu'à être "obligé de venir pour valider votre licence", essayer d'en tirer quelque chose...</li>
+                        <li class="fragment">...que le développement .NET soit ou non dans votre cible professionnelle, vous devriez trouver ;)</li>
+                    </ol>
+                    <h4 class="fragment">MERCI POUR VOTRE RESPECT (notamment des autres)</h4>
+                </section>
+            </section>
+        </div>
+    </div>
+    <script src="../RevealJS/lib/js/head.min.js"></script>
+    <script src="../RevealJS/js/reveal.min.js"></script>
+    <script>
+
+        // Full list of configuration options available here:
+        // https://github.com/hakimel/reveal.js#configuration
+        Reveal.initialize({
+            controls: true,
+            progress: true,
+            history: true,
+            center: true,
+
+            theme: 'night', // available themes are in /css/theme
+            transition: 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+            // Parallax scrolling
+            // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+            // parallaxBackgroundSize: '2100px 900px',
+
+            // Optional libraries used to extend on reveal.js
+            dependencies: [
+                { src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+                { src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+                { src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+                { src: 'plugin/zoom-js/zoom.js', async: true, condition: function () { return !!document.body.classList; } },
+                { src: 'plugin/notes/notes.js', async: true, condition: function () { return !!document.body.classList; } }
+            ]
+        });
+
+    </script>
+</body>
+</html>
