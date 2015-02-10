@@ -30,7 +30,7 @@ namespace CSharpDiscovery
         //[Test]
         //public void AddAMethodOverloadThatMakeASumOfTwoDoubleFromStringRepresentation()
         //{
-        //    var sumOfTwoDoubleFromString = "1.0+2";
+        //    var sumOfTwoDoubleFromString = "1,0+2";
         //    // add a method with the same name that uses the previous method
         //    // tips : use string.Split
         //    Check.That(onePlusTwo).Equals(3);
@@ -57,7 +57,7 @@ namespace CSharpDiscovery
         //[Test]
         //public void DefineConstantForPi()
         //{
-        //    var sumOfADoubleAndPiConstant = "1.2 + pi";
+        //    var sumOfADoubleAndPiConstant = "1,2 + pi";
         //    // define pi constant (as double) and replace pi string with constant value
         //    Check.That(sum).Equals(4.34);
         //}
@@ -65,7 +65,7 @@ namespace CSharpDiscovery
         //[Test]
         //public void StaticReadonlyMembers()
         //{
-        //    var sumOfADoubleAndPiConstant = "1.2 + pi";
+        //    var sumOfADoubleAndPiConstant = "1,2 + pi";
         //    // replace pi constant with a static readonly member
         //    Check.That(sum).Equals(4.34);
         //}
