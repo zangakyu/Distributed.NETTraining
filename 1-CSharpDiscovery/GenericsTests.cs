@@ -69,4 +69,24 @@
         //    // Add a type constraint on T generic parameter to allow only IDomainEvent interface implementation
         //}
     }
+
+    public class EventPublisher
+    {
+        private Dictionary<Type, object> registeredHandlers = new Dictionary<Type, object>();
+
+        public void Register<T>(IHandles<T> eventHandler)
+        {
+            registeredHandlers.Add(typeof(T), eventHandler);
+        }
+
+        public void Publish<T>(T someEvent)
+        {
+            ((IHandles<T>)registeredHandlers[typeof(T)]).Handle(someEvent);
+        }
+    }
+
+    public interface IHandles<T>
+    {
+        void Handle(T @event);
+    }
 }
