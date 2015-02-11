@@ -54,6 +54,7 @@
     <Compile Include="ControlFlowTests.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="DelegatesAndEventsTests.cs" />
     <Compile Include="ExceptionsTests.cs" />
     <Compile Include="GenericsTests.cs" />
     <Compile Include="InheritanceAndPolymorphismTests.cs" />
