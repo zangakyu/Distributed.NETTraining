@@ -54,6 +54,7 @@
     <Compile Include="ControlFlowTests.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="GenericsTests.cs" />
     <Compile Include="InheritanceAndPolymorphismTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TypesTests.cs" />
