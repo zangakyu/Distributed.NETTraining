@@ -1,0 +1,9 @@
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\bin\Debug\CSharpDiscovery.dll
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\bin\Debug\CSharpDiscovery.pdb
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\bin\Debug\NFluent.dll
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\bin\Debug\nunit.framework.dll
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\bin\Debug\NFluent.xml
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\bin\Debug\nunit.framework.xml
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\obj\Debug\1-CSharpDiscovery.csprojResolveAssemblyReference.cache
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\obj\Debug\CSharpDiscovery.dll
+F:\_IUT_\Developpement\git\dotNet\Distributed.NETTraining\1-CSharpDiscovery\obj\Debug\CSharpDiscovery.pdb
