@@ -47,9 +47,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ArraysTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="ControlFlowTests.cs">
       <SubType>Code</SubType>
     </Compile>
