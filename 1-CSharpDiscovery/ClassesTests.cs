@@ -24,16 +24,16 @@ namespace CSharpDiscovery
         //{
         //    var valuesToSum = new[] { 1.3, 1.7 };
         //    // add a method Sum to calculator class
-        //    Check.That(sumOfTheArray).Equals(3);
+        //    Check.That(sumOfTheArray).Equals(3.0);
         //}
 
         //[Test]
         //public void AddAMethodOverloadThatMakeASumOfTwoDoubleFromStringRepresentation()
         //{
-        //    var sumOfTwoDoubleFromString = "1.0+2";
+        //    var sumOfTwoDoubleFromString = "1,0+2";
         //    // add a method with the same name that uses the previous method
         //    // tips : use string.Split
-        //    Check.That(onePlusTwo).Equals(3);
+        //    Check.That(onePlusTwo).Equals(3.0);
         //}
 
         //[Test]
@@ -57,7 +57,7 @@ namespace CSharpDiscovery
         //[Test]
         //public void DefineConstantForPi()
         //{
-        //    var sumOfADoubleAndPiConstant = "1.2 + pi";
+        //    var sumOfADoubleAndPiConstant = "1,2 + pi";
         //    // define pi constant (as double) and replace pi string with constant value
         //    Check.That(sum).Equals(4.34);
         //}
@@ -65,7 +65,7 @@ namespace CSharpDiscovery
         //[Test]
         //public void StaticReadonlyMembers()
         //{
-        //    var sumOfADoubleAndPiConstant = "1.2 + pi";
+        //    var sumOfADoubleAndPiConstant = "1,2 + pi";
         //    // replace pi constant with a static readonly member
         //    Check.That(sum).Equals(4.34);
         //}
@@ -74,7 +74,7 @@ namespace CSharpDiscovery
         //public void MakeSumMethodsStaticAsTheyDoNotNeedAnyInstanceSpecific()
         //{
         //    // make sum methods static and call one these to retrieve a sum of double array values
-        //    Check.That(sum).Equals(3);
+        //    Check.That(sum).Equals(3.0);
         //}
 
         //[Test]
