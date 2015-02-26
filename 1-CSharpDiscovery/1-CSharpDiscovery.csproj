@@ -47,16 +47,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
-=======
-    <Compile Include="ArraysTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Calculator.cs" />
     <Compile Include="ClassesTests.cs" />
->>>>>>> TD1.1.4
-    <Compile Include="ControlFlowTests.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
