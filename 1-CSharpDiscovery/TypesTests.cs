@@ -91,7 +91,7 @@ namespace CSharpDiscovery
             Check.That(integerParsed).Equals(expectedInteger);
         }
 
-       // [Test]
+       [Test]
         public void AFloatStringRepresentationCannotBeParsedToInteger()
         {     
             // Create a method named ParseFloatStringAsInteger that takes no argument, return void and parse a float string representation "30.0"
@@ -135,12 +135,17 @@ namespace CSharpDiscovery
             Check.That(nullableInteger.HasValue).IsFalse();
         }
 
-        //[Test]
-        //public void GettingValueOfANullableIntwithNullValueThrowsAnInvalidOperationException()
-        //{
-        //    // Create a method named GetNullableIntValue that takes no argument, return void and access a nullable int value (nullableInteger.Value)
-        //    Check.That(GetNullableIntValue).Throws<InvalidOperationException>();
-        //}
+        [Test]
+        public void GettingValueOfANullableIntwithNullValueThrowsAnInvalidOperationException()
+        {
+            // Create a method named GetNullableIntValue that takes no argument, return void and access a nullable int value (nullableInteger.Value)
+            Check.That(GetNullableIntValue).Throws<InvalidOperationException>();
+        }
+        public void GetNullableIntValue()
+        {
+            int? nullableInteger = null;
+            var e = nullableInteger.Value;
+        }
 
         //[Test]
         //public void NullableIntWithNullValueDoesNotHaveValue()
