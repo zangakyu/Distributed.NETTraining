@@ -24,7 +24,7 @@ namespace CSharpDiscovery
         //{
         //    var valuesToSum = new[] { 1.3, 1.7 };
         //    // add a method Sum to calculator class
-        //    Check.That(sumOfTheArray).Equals(3);
+        //    Check.That(sumOfTheArray).Equals(3.0);
         //}
 
         //[Test]
@@ -33,7 +33,7 @@ namespace CSharpDiscovery
         //    var sumOfTwoDoubleFromString = "1,0+2";
         //    // add a method with the same name that uses the previous method
         //    // tips : use string.Split
-        //    Check.That(onePlusTwo).Equals(3);
+        //    Check.That(onePlusTwo).Equals(3.0);
         //}
 
         //[Test]
@@ -74,7 +74,7 @@ namespace CSharpDiscovery
         //public void MakeSumMethodsStaticAsTheyDoNotNeedAnyInstanceSpecific()
         //{
         //    // make sum methods static and call one these to retrieve a sum of double array values
-        //    Check.That(sum).Equals(3);
+        //    Check.That(sum).Equals(3.0);
         //}
 
         //[Test]
