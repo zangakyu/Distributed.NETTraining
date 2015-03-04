@@ -40,7 +40,7 @@ namespace CSharpDiscovery
         //[Test]
         //public void AnIntIsNotEqualToSameIntAsLong()
         //{
-        //    Check.That(integerAsInt32).Not.Equals(integer);
+        //    Check.That(integerAsLong).Not.Equals(integer);
         //}
 
         //[Test]
@@ -59,7 +59,7 @@ namespace CSharpDiscovery
         //}
 
         //[Test]
-        //public void AFloatCanBeCastedToInteger()
+        //public void AnIntCanBeImplicitlyCastedToFloat()
         //{
         //    int integer = 1;
         //    float expectedSingle = 1.0F;
