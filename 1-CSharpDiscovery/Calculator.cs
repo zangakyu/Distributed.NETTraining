@@ -18,6 +18,7 @@ namespace CSharpDiscovery
         {
             setName(name);
         }
+
         public double sumOfTheArray(double[] tab)
         {
             double somme = 0;
