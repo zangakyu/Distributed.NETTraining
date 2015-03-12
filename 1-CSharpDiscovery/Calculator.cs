@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace CSharpDiscovery
 {
-    class Calculator
+    internal class Calculator
     {
-        public  String name;
+        public String name;
         public static readonly double pi = 3.14;
+
         public Calculator()
         {
 
         }
+
         public Calculator(String name)
         {
             setName(name);
@@ -28,6 +30,7 @@ namespace CSharpDiscovery
             }
             return somme;
         }
+
         public double calculfromString(String jambon)
         {
             double somme = 0;
@@ -52,9 +55,15 @@ namespace CSharpDiscovery
         {
             return this.name;
         }
+
         public void setName(String name)
         {
             this.name = name;
         }
-   }
+
+        virtual public double Sum(double[] toSum)
+        {
+            return toSum.Sum();
+        }
+    }
 }
