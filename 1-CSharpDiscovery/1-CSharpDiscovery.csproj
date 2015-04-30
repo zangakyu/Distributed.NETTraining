@@ -58,12 +58,12 @@
     <Compile Include="IComputeStrategy.cs" />
     <Compile Include="InheritanceAndPolymorphismTests.cs" />
     <Compile Include="IntegerCalculator.cs" />
+    <Compile Include="OperationDelegate.cs" />
     <Compile Include="ProductAbstractStringCalculator.cs" />
     <Compile Include="ProductStrategy.cs" />
     <Compile Include="DelegatesAndEventsTests.cs" />
     <Compile Include="ExceptionsTests.cs" />
     <Compile Include="GenericsTests.cs" />
-    <Compile Include="InheritanceAndPolymorphismTests.cs" />
     <Compile Include="LinqTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="StringCalculator.cs" />

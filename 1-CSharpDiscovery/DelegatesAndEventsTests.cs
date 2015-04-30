@@ -11,8 +11,9 @@
         //public void DefineADelegateAndAssignItFromAMethod()
         //{
         //    OperationDelegate operationDelegate = SumOperation;
-        //    Check.That(operationDelegate(1.3, 1.5)).Equals(2.8);
+        //    //Check.That(operationDelegate(1.3, 1.5)).Equals(2.8);
         //}
+
 
         //[Test]
         //public void UsePredefinedFuncDelegateAndAssignItFromAMethod()
@@ -58,4 +59,5 @@
         //    Check.That(nbParseError).Equals(1);
         //}
     }
+
 }

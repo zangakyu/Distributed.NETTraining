@@ -11,7 +11,7 @@
         //public void UseAForeachLoopToSelectItemsStartingWithPlCaseSentitive()
         //{
         //    var items = new[] { "plip", "foo", "bar", "plop", "plup", "Plap" };
-        //    var filteredItems = new List<string>();
+        //    var filteredItems = items.Where(value => value.StartsWith("pl")).ToList();
         //    // foreach loop to add
         //    Check.That(filteredItems).ContainsExactly("plip", "plop", "plup");
         //}
