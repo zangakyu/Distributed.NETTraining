@@ -22,17 +22,19 @@ namespace Messaging.Tests.Domain
         }
 
 
-        //[Test]
-        //public void WhenGetLast5MessagesForKnownUser_ThenItDoesNotReturnMessagesFromAnotherUser()
-        //{
-        //    var userId = new UserId();
-        //    var anotherUserId = new UserId();
-        //    var repository = new TimelineMessageRepository(getFakeTimelineMessages(10, userId, anotherUserId));
+        [Test]
+        public void WhenGetLast5MessagesForKnownUser_ThenItDoesNotReturnMessagesFromAnotherUser()
+        {
+            var userId = new UserId();
+            var anotherUserId = new UserId();
+            var repository = new TimelineMessageRepository(getFakeTimelineMessages(10, userId, anotherUserId));
 
-        //    IEnumerable<TimelineMessage> result = repository.GetLastMessagesForUser(userId, 5);
+            IEnumerable<TimelineMessage> result = repository.GetLastMessagesForUser(userId, 5);
+            Check.That(result).HasSize(5);
+            Check.That(result.All(x => x.Id.Equals(userId)));
 
-        //    // TODO add a Check on UserId Check.That(result).Contains();
-        //}
+            // TODO add a Check on UserId Check.That(result).Contains();
+        }
 
         private IEnumerable<TimelineMessage> getFakeTimelineMessages(int nbMessages, params UserId[] userIds)
         {
@@ -41,7 +43,7 @@ namespace Messaging.Tests.Domain
             {
                 var currentUserId = userIds[i % userIds.Count()];
                 var currentPublishedDate = DateTime.Now.AddHours(random.Next(-nbMessages * 10, nbMessages * 10));
-                yield return new TimelineMessage(currentUserId, "author" + i, currentPublishedDate);
+                yield return new TimelineMessage(currentUserId, "author" + i, currentPublishedDate,"blabla",10);
             }
             /* TODO : instanciate TimelineMessage
              * yield return allows to agregate all
