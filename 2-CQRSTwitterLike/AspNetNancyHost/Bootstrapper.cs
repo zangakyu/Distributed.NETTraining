@@ -23,7 +23,8 @@ namespace AspNetNancyHost
             {
                 var currentUserId = userIds[i % userIds.Count()];
                 var currentPublishedDate = DateTime.Now.AddHours(random.Next(-nbMessages * 10, nbMessages * 10));
-                yield return new TimelineMessage(currentUserId, currentPublishedDate, new UserId("3"), "hello " + i, 0);
+                var messageId = ++MessagePublished.messageIds;
+                yield return new TimelineMessage(messageId,currentUserId, currentPublishedDate, new UserId("3"), "hello " + i, 0);
             }
         }
     }

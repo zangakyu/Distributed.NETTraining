@@ -12,7 +12,7 @@ namespace Messaging.Infrastructure
         {
             _timelineMessageRepository = timelineMessageRepository;
             Get["/hello"] = _ => "Hello world!";
-            Get["/messaging/timelineMessages/{userId}"] = OnTimelineMessagesRequested;
+            Get["/messaging/timelineMessages/{author}"] = OnTimelineMessagesRequested;
         }
 
         private dynamic OnTimelineMessagesRequested(dynamic arg)

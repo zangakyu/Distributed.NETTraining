@@ -44,7 +44,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\MessageDeleted.cs" />
+    <Compile Include="Domain\MessagePublished.cs" />
     <Compile Include="Domain\TimelineMessage.cs" />
+    <Compile Include="Domain\TimeLineMessageProjections.cs" />
     <Compile Include="Domain\UserId.cs" />
     <Compile Include="Domain\ITimelineMessageRepository.cs" />
     <Compile Include="Infrastructure\MessagingModule.cs" />

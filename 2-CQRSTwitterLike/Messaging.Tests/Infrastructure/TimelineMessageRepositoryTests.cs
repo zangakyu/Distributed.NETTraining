@@ -33,7 +33,7 @@ namespace Messaging.Tests.Domain
 
             Check.That(result).HasSize(5);
             Check.That(result.All(x => x.OwnerId.Equals(userId))).IsTrue();
-            // TODO add a Check on UserId Check.That(result).Contains();
+            // TODO add a Check on author Check.That(result).Contains();
         }
 
         private IEnumerable<TimelineMessage> GetFakeTimelineMessages(int nbMessages, params UserId[] userIds)
@@ -43,7 +43,9 @@ namespace Messaging.Tests.Domain
             {
                 var currentUserId = userIds[i % userIds.Count()];
                 var currentPublishedDate = DateTime.Now.AddHours(random.Next(-nbMessages * 10, nbMessages * 10));
-                yield return new TimelineMessage(currentUserId, currentPublishedDate, new UserId("3"), "hello " + i, 0);
+                var messageId = ++MessagePublished.messageIds;
+
+                yield return new TimelineMessage(messageId,currentUserId, currentPublishedDate, new UserId("3"), "hello " + i, 0);
             }
         }
     }
